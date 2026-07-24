@@ -1,42 +1,31 @@
-import { Arrow } from "./HeroData";
+import { ArrowRight } from "lucide-react";
+import type { IconType } from "../../types/icons";
+import { cx } from "../../lib/cx";
+import { IconTile } from "../common/IconTile";
 
 interface Props {
-  icon: any;
+  icon: IconType;
   title: string;
   desc: string;
   highlight?: boolean;
 }
 
-const HeroServiceCard = ({
-  icon: Icon,
-  title,
-  desc,
-  highlight,
-}: Props) => {
+const HeroServiceCard = ({ icon, title, desc, highlight }: Props) => {
   return (
     <div
-      className={`group flex items-center justify-between rounded-3xl border p-6 transition-all duration-300 hover:translate-x-2 ${
-        highlight
-          ? "border-amber-500 bg-amber-500/10"
-          : "border-white/10 bg-[#23395B]/80"
-      }`}
+      className={cx(
+        "group flex items-center justify-between rounded-2xl border bg-[image:var(--card-gradient-strong)] p-4 shadow-[var(--shadow-soft)] transition hover:-translate-y-1 hover:shadow-[var(--shadow-hover)]",
+        highlight ? "border-[rgba(226,129,46,0.48)]" : "border-[rgba(37,99,235,0.20)]",
+      )}
     >
-      <div className="flex items-center gap-4">
-        <div
-          className={`rounded-xl p-4 ${
-            highlight ? "bg-amber-500" : "bg-blue-500"
-          }`}
-        >
-          <Icon className="h-6 w-6 text-white" />
-        </div>
-
-        <div>
-          <h3 className="font-semibold text-white">{title}</h3>
-          <p className="text-sm text-gray-400">{desc}</p>
+      <div className="flex min-w-0 items-center gap-4">
+        <IconTile icon={icon} tone={highlight ? "amber" : "teal"} size="md" />
+        <div className="min-w-0">
+          <h3 className="truncate font-bold text-[var(--ink)]">{title}</h3>
+          <p className="text-sm text-[var(--slate)]">{desc}</p>
         </div>
       </div>
-
-      <Arrow className="text-gray-400 transition group-hover:translate-x-2" />
+      <ArrowRight className="shrink-0 text-[var(--amber-dark)] transition group-hover:translate-x-1" />
     </div>
   );
 };

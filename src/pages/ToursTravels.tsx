@@ -1,16 +1,28 @@
-const ToursTravels = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold text-cyan-600">
-          AARIS Tours & Travels
-        </h1>
+import { Bus, Plane, Train, Umbrella } from "lucide-react";
+import { CategoryPage } from "../components/common/CategoryPage";
+import { useLanguage } from "../i18n";
 
-        <p className="mt-4 text-lg text-gray-600">
-          Bus, Train, Flight Ticket Booking & Holiday Packages
-        </p>
-      </div>
-    </div>
+const items = [
+  { icon: Bus, title: "Bus Booking", desc: "Local and long-distance bus booking support." },
+  { icon: Train, title: "Train Tickets", desc: "Train ticket guidance and travel planning assistance." },
+  { icon: Plane, title: "Flight Booking", desc: "Domestic flight booking support with clear details." },
+  { icon: Umbrella, title: "Holiday Packages", desc: "Family and group travel planning support." },
+];
+
+const trust = ["Clear booking support", "Family travel guidance", "Phone and WhatsApp updates"];
+
+const ToursTravels = () => {
+  const { t } = useLanguage();
+
+  return (
+    <CategoryPage
+      eyebrow={t("nav.toursTravels")}
+      title={t("pages.travelsTitle")}
+      description={t("pages.travelsDesc")}
+      items={items}
+      trustPoints={trust}
+      tone="teal"
+    />
   );
 };
 
