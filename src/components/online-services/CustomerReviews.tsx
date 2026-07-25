@@ -7,35 +7,119 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const reviews = [
+  // ---------- English (40%) ----------
   {
-    name: "Selvam",
-    location: "Sivagangai",
+    name: "Arun Kumar",
+    location: "Coimbatore",
     review:
-      "Mobile number change done quickly. Fast and efficient, couldn't ask for more!",
-  },
-  {
-    name: "Hema",
-    location: "Theni",
-    review:
-      "Certificate status checked fast. Reliable service, I always come back here!",
+      "Excellent service. My PAN card application was completed much faster than I expected.",
   },
   {
     name: "Farhan",
     location: "Salem",
     review:
-      "PAN instant service is excellent. Got my work done without any trouble!",
+      "Very responsive team. They answered all my questions and guided me throughout the process.",
   },
   {
     name: "Priya",
     location: "Madurai",
     review:
-      "Very professional team. Passport application process was smooth and quick.",
+      "Passport application was handled professionally. Highly satisfied with the service.",
   },
   {
-    name: "Arun",
-    location: "Coimbatore",
+    name: "John Peter",
+    location: "Chennai",
     review:
-      "Income certificate completed before the expected date. Highly recommended.",
+      "Quick document verification and regular updates. Great experience overall.",
+  },
+  {
+    name: "Nandhini",
+    location: "Erode",
+    review:
+      "Reliable online service. Everything was completed without any delay.",
+  },
+  {
+    name: "Ramesh",
+    location: "Trichy",
+    review: "Very good customer support. They explained every step clearly.",
+  },
+  {
+    name: "Harish",
+    location: "Tiruppur",
+    review: "Fast service and reasonable charges. Definitely recommended.",
+  },
+  {
+    name: "Deepa",
+    location: "Karur",
+    review:
+      "Really impressed with the professionalism. Thank you for the quick support.",
+  },
+
+  // ---------- Tanglish (30%) ----------
+  {
+    name: "Karthi",
+    location: "Namakkal",
+    review: "Super bro... Aadhaar mobile update seekiram mudichutanga.",
+  },
+  {
+    name: "Vignesh",
+    location: "Dharmapuri",
+    review: "PAN apply panna romba easy ah irundhuchu. Thanks anna.",
+  },
+  {
+    name: "Saranya",
+    location: "Dindigul",
+    review: "Documents anupinen, remaining ellam avanga pathukitanga.",
+  },
+  {
+    name: "Bala",
+    location: "Salem",
+    review:
+      "Response semma fast. WhatsApp la message pannadhum reply vandhuduchu.",
+  },
+  {
+    name: "Keerthi",
+    location: "Theni",
+    review: "Income certificate expected date ku munnadiye kidaichiduchu.",
+  },
+  {
+    name: "Sathish",
+    location: "Virudhunagar",
+    review: "Service nalla iruku. Hidden charges edhuvum illa.",
+  },
+
+  // ---------- Tamil (30%) ----------
+  {
+    name: "முருகன்",
+    location: "சேலம்",
+    review:
+      "மிகவும் நல்ல சேவை. குறித்த நேரத்தில் வேலை முடித்து கொடுத்தார்கள்.",
+  },
+  {
+    name: "காவ்யா",
+    location: "மதுரை",
+    review:
+      "எல்லா சந்தேகங்களுக்கும் பொறுமையாக பதில் சொல்லி உதவினார்கள்.",
+  },
+  {
+    name: "ரமேஷ்",
+    location: "திருச்சி",
+    review: "பாஸ்போர்ட் விண்ணப்பம் மிகவும் எளிதாக முடிந்தது. நன்றி.",
+  },
+  {
+    name: "செல்வி",
+    location: "ஈரோடு",
+    review: "ஆதார் திருத்த வேலை விரைவாக செய்து கொடுத்தார்கள்.",
+  },
+  {
+    name: "கிருஷ்ணன்",
+    location: "கோயம்புத்தூர்",
+    review: "நம்பிக்கையான சேவை. மீண்டும் கண்டிப்பாக வருவேன்.",
+  },
+  {
+    name: "அனிதா",
+    location: "தேனி",
+    review: "சான்றிதழ் வேலை எந்த சிரமமும் இல்லாமல் முடிந்தது.",
   },
 ];
 

@@ -24,6 +24,8 @@ export const services = [
   // Identity
   {
     id: 1,
+    slug: "aadhaar-services",
+    detailSlug: "aadhaar-address-change",
     title: "Aadhaar Services",
     category: "Identity",
     description: "New, Update & PVC Card",
@@ -31,6 +33,7 @@ export const services = [
   },
   {
     id: 2,
+    slug: "pan-card",
     title: "PAN Card",
     category: "Identity",
     description: "New & Correction",
@@ -38,6 +41,7 @@ export const services = [
   },
   {
     id: 3,
+    slug: "voter-id",
     title: "Voter ID",
     category: "Identity",
     description: "New, Update & Transfer",
@@ -47,6 +51,7 @@ export const services = [
   // Certificates
   {
     id: 4,
+    slug: "community-certificate",
     title: "Community Certificate",
     category: "Certificates",
     description: "Apply & Download",
@@ -54,6 +59,7 @@ export const services = [
   },
   {
     id: 5,
+    slug: "income-certificate",
     title: "Income Certificate",
     category: "Certificates",
     description: "Apply Online",
@@ -61,6 +67,7 @@ export const services = [
   },
   {
     id: 6,
+    slug: "nativity-certificate",
     title: "Nativity Certificate",
     category: "Certificates",
     description: "Apply Online",
@@ -70,6 +77,7 @@ export const services = [
   // Ration
   {
     id: 7,
+    slug: "ration-card",
     title: "Ration Card",
     category: "Ration",
     description: "New, Transfer & Correction",
@@ -79,6 +87,7 @@ export const services = [
   // Land
   {
     id: 8,
+    slug: "patta-chitta",
     title: "Patta / Chitta",
     category: "Land",
     description: "Land Records",
@@ -86,6 +95,7 @@ export const services = [
   },
   {
     id: 9,
+    slug: "encumbrance-certificate",
     title: "Encumbrance Certificate",
     category: "Land",
     description: "EC Apply & Download",
@@ -95,6 +105,8 @@ export const services = [
   // Travel
   {
     id: 10,
+    slug: "passport-services",
+    detailSlug: "passport",
     title: "Passport Services",
     category: "Travel",
     description: "Fresh & Renewal",
@@ -104,6 +116,7 @@ export const services = [
   // Business
   {
     id: 11,
+    slug: "gst-registration",
     title: "GST Registration",
     category: "Business",
     description: "New GST Registration",
@@ -111,6 +124,8 @@ export const services = [
   },
   {
     id: 12,
+    slug: "msme-udyam",
+    detailSlug: "msme-registration",
     title: "MSME / UDYAM",
     category: "Business",
     description: "Business Registration",
@@ -118,6 +133,7 @@ export const services = [
   },
   {
     id: 13,
+    slug: "fssai-registration",
     title: "FSSAI Registration",
     category: "Business",
     description: "Food License",
